@@ -22,11 +22,147 @@
   		
     </head>
     <body>
-    	<div data-role="header" id="div_header1" style="text-align: center;" class="ui-bar-a ui-shadow ui-header-fixed">
-     		<a href="#panel1" class="ui-btn-left ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all" id="btn_bars2">No text</a>
-     		<p>CDI APP</p>
-		</div>
+    	<div data-role="page" id='login' data-ythreshold="150" data-xthreshold="150">
+			<div data-role="header" id="div_header1" style="text-align: center;" class="ui-bar-a ui-shadow ui-header-fixed">
+		 		<a href="#panel1" class="ui-btn-left ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all" id="btn_bars2">No text</a>
+		 		<p>CDI APP</p>
+			</div>
+			<div class="ui-content scrollclass" id="content0" >
+				<p>Username: <input id='username' type='text'></p>
+				<p>Password: <input id='password' type='text'></p>
+				<p><a href="#" class="ui-btn ui-btn-inline" id='login_user'>Login</a></p>
+			</div>
 		
+		</div>
+		<div data-role="page" id='page1' data-ythreshold="150" data-xthreshold="150">
+	<div data-role="popup" id="popup_btn">
+		<p><a href="#" class="ui-btn ui-btn-inline custom_btn1 nr1">1</a></p>
+		<p><a href="#" class="ui-btn ui-btn-inline custom_btn1 nr2">2</a></p>
+		<p><a href="#" class="ui-btn ui-btn-inline custom_btn1 nr3">3</a></p>
+		<p><a href="#" class="ui-btn ui-btn-inline custom_btn1 nr4">4</a></p>
+		<p><a href="#" class="ui-btn ui-btn-inline custom_btn1 nr5">5</a></p>
+	</div>
+	<div data-role="popup" id="popup_feedback">
+	Standard:
+		<div  id="stand_feed"></div>
+		<div id="cus_feed">Custom: <br><input type='text' id='cus_feed_ans' value=''> </input><br><a href="#" class="ui-btn ui-btn-inline" id='ans_ok'>OK</a></div>
+	</div>
+	<div data-role="popup" id="popup_team_names">
+		<p><a href="#" class="ui-btn ui-btn-inline team_name" data-team-name="Team Name 1">Team Name 1</a></p>
+		<p><a href="#" class="ui-btn ui-btn-inline team_name" data-team-name="Team Name 2">Team Name 2</a></p>
+		<p><a href="#" class="ui-btn ui-btn-inline team_name" data-team-name="Team Name 3">Team Name 3</a></p>
+	</div>
+	<div data-role="header" id="div_header" style="text-align: center;" class="ui-bar-a ui-shadow ui-header-fixed">
+		 <a href="#panel1" class="ui-btn-left ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all" id="btn_bars0">No text</a>
+		 <p id="team_name">Team Name 1</p>
+		  <a href="#" class="ui-btn ui-btn-right ui-shadow ui-corner-all ui-btn-icon-right ui-icon-check" id="btn_save">Save</a> 
+	</div>
+	<div data-role="panel" data-display="push" id="panel1">
+		<div data-role="collapsibleset"  id="my-collaspible" data-inset="false" data-collapsed-icon="plus" data-expanded-icon="minus">
+		    <div data-role="collapsible">
+		        <h1>Current Team</h1>
+		        <div class="scroll_list">
+		        <ul id='criteria_list1' data-role="listview">
+		       </ul>
+		       </div>
+		    </div>
+		    <div data-role="collapsible">
+		        <h2>Change Team</h2>
+		            <ul data-role="listview">
+		                <li><a class="list_nr2 team_name" data-team-name="Team Name 1" href="#">Team Name 1</a></li>
+		                <li><a class="list_nr2 team_name" data-team-name="Team Name 2" href="#">Team Name 2</a></li>
+		                <li><a class="list_nr2 team_name" data-team-name="Team Name 3" href="#">Team Name 3</a></li>
+		            </ul>
+		    </div>
+		</div>
+	</div>
+    <div id='show_swipe'>
+
+    </div>
+    <div class="ui-content scrollclass" id="content1">
+        <img src="img/cdi_logo.png" class='logo_img'>
+        <a id="img_up" class="ui-btn ui-icon-arrow-u ui-btn-icon-notext ui-corner-all"> No Text</a>
+        <p id="todays_date"> </p> 
+        <div id='div_module'>
+        
+        </div>
+        <div id='div_title'>
+
+        </div>
+        <br>
+        <div id="div_criteria">
+
+        </div>
+        <div id='save_data0'>
+            <a href="#" id="change_enable" class="custom_btn ui-btn ui-btn-inline">1</a>
+            <p id="feedback">
+            Feedback:
+            </p>
+        </div>
+        <div id = "save_data1">
+
+        </div>
+        <a id="img_down" class="ui-btn ui-icon-arrow-d ui-btn-icon-notext ui-corner-all"> No Text</a>
+    </div>
+</div>
+<div data-role="page" id='page2' data-ythreshold="150" data-xthreshold="150">
+<div data-role="popup" id="popup_team_names1">
+    <p><a href="#" class="ui-btn ui-btn-inline team_name" data-team-name="Team Name 1">Team Name 1</a></p>
+    <p><a href="#" class="ui-btn ui-btn-inline team_name" data-team-name="Team Name 2">Team Name 2</a></p>
+    <p><a href="#" class="ui-btn ui-btn-inline team_name" data-team-name="Team Name 3">Team Name 3</a></p>
+</div>
+<div data-role="header" id="div_header0" style="text-align: center;" class="ui-bar-a ui-shadow ui-header-fixed">
+     <a href="#panel2" class="ui-btn-left ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all" id="btn_bars1">No text</a> 
+     <p id="team_name1" class="ui-title">Team Name 1</p>
+</div>
+<div data-role="panel" data-display="push" id="panel2">
+    <div data-role="collapsibleset"  id="my-collaspible1" data-inset="false" data-collapsed-icon="plus" data-expanded-icon="minus">
+        <div data-role="collapsible">
+            <h1>Current Team</h1>
+            <div class="scroll_list">
+            <ul id='criteria_list2' data-role="listview">
+               <li class="list_nr1"><a id="new_data_team" href="#">New Data</a></li>
+           </ul>
+           </div>
+        </div>
+        <div data-role="collapsible">
+            <h2>Change Team</h2>
+                <ul data-role="listview">
+                    <li><a class="list_nr2 team_name" data-team-name="Team Name 1" href="#">Team Name 1</a></li>
+                    <li><a class="list_nr2 team_name" data-team-name="Team Name 2" href="#">Team Name 2</a></li>
+                    <li><a class="list_nr2 team_name" data-team-name="Team Name 3" href="#">Team Name 3</a></li>
+                </ul>
+        </div>
+    </div>
+</div>
+<div id='show_swipe1'>
+
+</div>
+<div class="ui-content scrollclass" id="content2">
+    	<img src="img/cdi_logo.png" class='logo_img'>
+        <a id="img_up1" class="ui-btn ui-icon-arrow-u ui-btn-icon-notext ui-corner-all"> No Text</a>
+        <a id="link_current1" class="ui-btn ui-btn-inline ui-corner-all"> Current month</a>
+        <div id='div_date'>
+            
+        </div>
+        <div id='div_module0'>
+            Module
+        </div>
+        <div id='div_title0'>
+            Title
+        </div>
+        <div id='save_data00'>
+            <a href="#" id="change_enable0" class="custom_btn2 ui-btn ui-btn-inline">1</a>
+            <p id="feedback0">
+            Feedback:
+            </p>
+        </div>
+        <div id = "save_data10">
+
+        </div>
+        <a id="img_down1" class="ui-btn ui-icon-arrow-d ui-btn-icon-notext ui-corner-all"> No Text</a>
+</div>
+</div>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         
