@@ -15,7 +15,7 @@ var app = {
     }
     //*
     
-    var host = "192.168.1.106/cdi_app2/";
+    var host = "http://192.168.1.106/cdi_app2/";
     var array_Criteria = [{
         Module: "Module 1",
         ID: '0',

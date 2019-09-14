@@ -1,9 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget android-versionCode="00001" id="io.nardus.ios_test" version="0.01" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'" />
     <preference name="phonegap-version" value="cli-9.0.0" />
     <icon height="1024" src="logo1_1.png" width="1024" />
     <icon density="mdpi" height="57" platform="android" src="img/logo.png" width="57" />
     <name>Test IOS</name>
+    
     <description>
         Testing IOS
     </description>
@@ -20,10 +22,12 @@
     <allow-intent href="geo:*" />
     <platform name="android">
         <allow-intent href="market:*" />
+	    <allow-intent href="http://192.168.1.106/" />
     </platform>
     <platform ios-CFBundleVersion="0.01" name="ios" version="0.01">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
+        <allow-intent href="*192.168.1.106*" />
         <icon height="180" src="images/Icon-180.png" width="180" />
         <icon height="60" src="images/Icon-Notification@3x.png" width="60" />
         <icon height="120" src="images/Icon-120.png" width="120" />
