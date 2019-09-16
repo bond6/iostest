@@ -16,6 +16,231 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+ /*#show_swipe {
+    position: absolute;
+}
+#show_swipe1 {
+    position: absolute;
+}
+#content1 {
+    position: absolute;
+}
+#content2 {
+    position: absolute;
+}
+.ui-content {
+    background-image: url('img/cdi_logo.png');
+    background-repeat: no-repeat;
+}*/
+.logo_img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#img_up {
+    left: 0;
+    top: 0;
+    position: fixed;
+    z-index: 3;
+}
+#img_down {
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 3;
+}
+#img_up1 {
+    left: 0;
+    top: 0;
+    position: fixed;
+    z-index: 3;
+}
+#img_down1 {
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    z-index: 3;
+}
+#link_current1 {
+	left: 100%;
+    top: 0;
+    position: fixed;
+    width:100px;
+    height:25px;
+    z-index: 3;
+}
+.ui-btn.custom_btn {
+    -webkit-user-select: none;
+    -webkit-touch-callout: none !important;
+    display:block;
+    width:25px;
+    height:33px;
+    line-height:33px;
+    border: 2px solid #f5f5f5;
+    border-radius: 50%;
+    color:#f5f5f5;
+    box-shadow: 0 0 3px black;
+    font-size:12px;
+    text-decoration:none;
+    box-shadow: none !important;
+    margin: 0 auto;
+}
+#todays_date {
+   text-align: center;
+}
+#div_date {
+      text-align: center;
+}
+#popup_feedback {
+        
+}
+#stand_feed{
+  text-align: center;
+}
+#ans_ok{
+   margin: 0 auto;
+}
+#cus_feed {
+  text-align: center;
+}
+#div_title {
+    text-align: center;
+}
+#div_module {
+    text-align: center;
+}
+#div_criteria {
+    text-align: center;
+}
+#save_data0 {
+    text-align: center;
+}
+#save_data1 {
+    text-align: center;   
+}
+#div_title0 {
+    text-align: center;
+}
+#div_module0 {
+    text-align: center;
+}
+#div_criteria0 {
+    text-align: center;
+}
+#save_data00 {
+    text-align: center;
+}
+#save_data10 {
+    text-align: center;   
+}
+.ui-btn.custom_btn1 {
+    display:block;
+    width:25px;
+    height:33px;
+    line-height:33px;
+    border: 2px solid #f5f5f5;
+    border-radius: 50%;
+    color:#f5f5f5;
+    text-align:center;
+    box-shadow: 0 0 3px black;
+    font-size:12px;
+  text-decoration:none;
+    box-shadow: none !important;
+}
+.ui-btn.custom_btn2 {
+  display:block;
+    width:25px;
+    height:33px;
+    line-height:33px;
+    border: 2px solid #f5f5f5;
+    border-radius: 50%;
+    color:#f5f5f5;
+    box-shadow: 0 0 3px black;
+    font-size:12px;
+  text-decoration:none;
+    box-shadow: none !important;
+    pointer-events: none;
+    cursor: default;
+     margin: 0 auto;
+}
+
+
+table thead th {
+    padding: 10px;
+    white-space: nowrap;
+}
+table tbody td {
+    border-bottom: solid 1px black;
+    padding: 10px;
+    white-space: nowrap;
+}
+#wrap {
+    position: relative;
+
+}
+#tbl_1 {
+    direction: rtl;
+    margin-left: 141px;
+   /* overflow-x: scroll;
+    overflow-y: visible;*/
+    padding-bottom: 5px;
+    width: 200px;
+}
+table {
+    border: none;
+    border-collapse: separate;
+    border-spacing: 0;
+    font: normal 13px Arial, sans-serif;
+}
+
+table .c_col {
+    left: 0;
+    position: absolute;
+    top: auto;
+    width: 120px;
+}
+table {
+    border-collapse: collapse;
+}
+
+table, td, th.c_row {
+    border: 1px solid black;
+}
+/*#my-collaspible .ui-collapsible-collapsed .ui-icon{
+    display: none;
+}
+#my-collaspible .ui-icon{
+    display: none;
+}*/
+.list_nr1 .ui-icon{
+    display: none;
+}
+.list_nr2 .ui-icon{
+    display: none;
+}
+.btn_feed {
+    font-weight:normal !important;
+}
+.scroll_list{
+    
+    /*overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    max-height: 250px;*/
+}
+#div_criteria{
+    
+   /* overflow-y: scroll;
+    overflow-x: visible;
+    -webkit-overflow-scrolling: touch;*/
+}
+#save_data1 {
+    /*overflow-y: scroll;
+    overflow-x: visible;
+    -webkit-overflow-scrolling: touch;*/
+}
+#btn_save {
+    background-image:none;
+}
 * {
     -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
 }
