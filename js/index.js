@@ -584,6 +584,7 @@ var app = {
     }
 
     function swiperightHandler0() {
+    	alert("begin");
         var index = jQuery.inArray(current_date, dates) - 1;
         if (index === -1) {
             idex = 0;
@@ -634,6 +635,7 @@ var app = {
             var header_height1 = $('#div_header0').height();
             $("#content2").attr('style', 'margin-top:' + header_height1 + 'px;');
         }
+    	alert("end");
     }
     $("#login_user").on('click', login_user);
     $("#img_down").on('click', swipeupHandler);
