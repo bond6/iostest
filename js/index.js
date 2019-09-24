@@ -525,7 +525,7 @@ var app = {
 
 
     function swipeleftHandler0() {
-    	alert($("#div_date").text());
+    	alert($("#div_date").text().valueOf());
         var index = jQuery.inArray(current_date, dates) + 1;
         if (index === dates.length) {
             index = dates.length - 1;
