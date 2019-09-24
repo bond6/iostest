@@ -980,9 +980,11 @@ var app = {
             e.preventDefault();
             object_hold = this;
             var link_name = $(this).attr('id');
+            var position_link = $('#'+link_name).position();
             $("#popup_btn").popup({
                 theme: "a",
-                positionTo: "#" + link_name
+                x:position_link.left+10,
+                y:position_link.top
             });
             $("#popup_btn").popup("open");
             return false;
