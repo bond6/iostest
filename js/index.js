@@ -8,12 +8,12 @@ var app = {
         $(document).ready(function() {
     $.event.special.tap.emitTapOnTaphold = false;
     
-    //Remove on mobile app
+    /*Remove on mobile app
     if (window.location.hash != "") {
     	window.location.hash = '';
     	window.location.reload(true);
     }
-    //*
+    */
     
     var host = "http://192.168.1.106/cdi_app2/";
     var array_Criteria = [{
