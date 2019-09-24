@@ -525,7 +525,7 @@ var app = {
 
 
     function swipeleftHandler0() {
-    	alert("begin");
+    	alert($("#div_date").text());
         var index = jQuery.inArray(current_date, dates) + 1;
         if (index === dates.length) {
             index = dates.length - 1;
@@ -536,7 +536,7 @@ var app = {
         var html_str_feedback = "";
         var feedback_question = [];
         var feedback_ans = [];
-        if ($("#div_date").text() === current_date || $("#div_date").text() === '') {
+        if ($("#div_date").text() === current_date || $("#div_date").text() === null) {
             $("body").pagecontainer("change", "#page1", {
                 transition: "slide"
             });
