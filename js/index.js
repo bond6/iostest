@@ -525,7 +525,6 @@ var app = {
 
 
     function swipeleftHandler0() {
-    	alert($("#div_date").text().valueOf());
         var index = jQuery.inArray(current_date, dates) + 1;
         if (index === dates.length) {
             index = dates.length - 1;
@@ -582,7 +581,6 @@ var app = {
             var header_height1 = $('#div_header0').height();
             $("#content2").attr('style', 'margin-top:' + header_height1 + 'px;');
         }
-        alert("end");
     }
 
     function swiperightHandler0() {
