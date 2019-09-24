@@ -536,7 +536,7 @@ var app = {
         var html_str_feedback = "";
         var feedback_question = [];
         var feedback_ans = [];
-        if ($("#div_date").text() === current_date) {
+        if ($("#div_date").text() === current_date || $("#div_date").text() === '') {
             $("body").pagecontainer("change", "#page1", {
                 transition: "slide"
             });
