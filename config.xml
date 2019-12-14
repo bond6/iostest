@@ -22,12 +22,12 @@
     <allow-intent href="geo:*" />
     <platform name="android">
         <allow-intent href="market:*" />
-	    <allow-intent href="http://192.168.1.106/" />
+	    <allow-intent href="http://192.168.1.110/" />
     </platform>
     <platform ios-CFBundleVersion="0.01" name="ios" version="0.01">
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
-        <allow-intent href="*192.168.1.106*" />
+        <allow-intent href="*192.168.1.110*" />
         <icon height="180" src="images/Icon-180.png" width="180" />
         <icon height="60" src="images/Icon-Notification@3x.png" width="60" />
         <icon height="120" src="images/Icon-120.png" width="120" />
